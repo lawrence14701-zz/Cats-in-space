@@ -1,0 +1,11 @@
+.container {
+  border-radius: 100px;
+  width: 2000px;
+  height: auto;
+  overflow: hidden;
+}
+.img {
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}

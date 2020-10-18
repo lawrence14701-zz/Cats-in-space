@@ -1,11 +1,18 @@
 import React, { useContext } from "react";
 import { ImageContext } from "../context/image_context";
-import Loading from "./loading";
+import imageStyles from "./imageStyles.module.css";
 
 function Video() {
   const [response] = useContext(ImageContext);
-  console.log(response, "data");
-  return <div>{response ? <div>hi</div> : <Loading />}</div>;
+  const { container, img } = imageStyles;
+  return (
+    <div>
+      <div className={container}>
+        <img className={img} src={response} alt="" />
+      </div>
+      )
+    </div>
+  );
 }
 
 export default Video;

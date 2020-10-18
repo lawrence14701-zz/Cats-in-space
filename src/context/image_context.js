@@ -8,7 +8,6 @@ const ContextProvider = ({ children }) => {
   useEffect(() => {
     (async () => {
       const result = await fetchData();
-      console.log(result, "result");
       setResponse(result);
     })();
   }, []);

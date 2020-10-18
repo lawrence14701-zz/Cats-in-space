@@ -10,7 +10,6 @@ function Video() {
       <div className={container}>
         <img className={img} src={response} alt="" />
       </div>
-      )
     </div>
   );
 }

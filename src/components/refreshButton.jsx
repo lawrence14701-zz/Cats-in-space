@@ -12,6 +12,7 @@ function RefreshButton() {
     <div className={buttons}>
       <button onClick={refreshPage} className={cx(btnColor, button)}>
         <img
+          alt="refresh"
           className={icon}
           src="https://htmlacademy.ru/assets/icons/reload-6x-white.png"
         />
